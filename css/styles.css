@@ -157,7 +157,7 @@ margin-left: 40px;
 .hero{
 background-color: var(--main-color);
 text-align: center;
-padding: 192px 474px;
+padding: 192px 0;
  } 
 
 .hero-title{
@@ -188,7 +188,7 @@ padding: 192px 474px;
 max-width: 264px;
 }
 .advantages-title{
-    padding-bottom: 8px;
+    margin-bottom: 8px;
 }
 .advantages-list-item:not(:last-child){
     margin-right: 24px;
@@ -201,6 +201,7 @@ max-width: 264px;
 .type-of-work-title{
 text-align: center;
 margin-bottom: 72px;
+margin-top: 0;
 }
 .type-of-work-list{
 display: flex;
@@ -210,8 +211,9 @@ margin-right: var(--main-margin);
 }
 /* Section-Our team */
 .team{
-padding: 120px 156px;
+padding: 120px 0;
 text-align: center;
+background-color: var(--cloud-color);
 }
 .team-title{
 margin-bottom: 72px;
@@ -224,6 +226,10 @@ margin-left: calc((-1) * var(--main-margin));
 .team-list-item{
     margin-left: var(--main-margin);
     flex-basis: calc((100%/4)- var(--main-margin));
+    background-color: var(--light-color);
+}
+.team-list:first-child{
+    margin-left: 0;
 }
 .info-padding{
     padding: 32px 16px;
@@ -237,14 +243,15 @@ margin-bottom: 8px;
 /* Footer */
 .footer{
     background-color: var(--main-color);
-    padding: 100px 1020px 100px 156px;
+    padding: 100px 0;
 }
-.footer-container{
-    max-width: 264px;
-}
+/* .footer-container{
+    
+} */
 .footer-text{
     margin-top: 16px;
     color: var(--cornflower-color);
+    max-width: 264px;
 }
 .logo-footer{
     color: var(--cloud-color);
@@ -253,10 +260,10 @@ margin-bottom: 8px;
 .portfolio-hero-list{
 display: flex;
 justify-content: center;
+margin-bottom: 72px;
 }
-.btn-container{
-    margin-bottom: 72px;
-}
+/* .portfolio-container{
+} */
 .portfolio-hero-list-item + .portfolio-hero-list-item{
 margin-left: var(--main-margin);
 }
@@ -309,7 +316,7 @@ margin-left: var(--main-margin);
     margin-left: var(--main-margin);
     flex-basis: calc((100%/3)- var(--main-margin));
     margin-bottom: 48px;
-    border-bottom: 0.5px solid #F4F4FD;
+    
 }
 
 .gallery-item-link {font-family: inherit;
@@ -317,12 +324,13 @@ margin-left: var(--main-margin);
     color: inherit;
 }
 .card-padding{
-    padding-left: 16px;
+    padding: 32px 52px 32px 16px;
+    border-left: 0.5px solid #F4F4FD;
+    border-top: 0.5px solid #F4F4FD;;
+    border-right: 0.5px solid #F4F4FD;
 }
 .gallery-item-title {
-    margin-top: 32px;
     margin-bottom: 8px;
-    padding-right: 16px;
 }
 
 /* .gallery-item-descr {} */
